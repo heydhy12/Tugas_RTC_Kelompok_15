@@ -1,0 +1,5 @@
+/home/heydhy12/taylor_qt/gui/build/CMakeFiles/taylor_gui.dir
+/home/heydhy12/taylor_qt/gui/build/CMakeFiles/edit_cache.dir
+/home/heydhy12/taylor_qt/gui/build/CMakeFiles/rebuild_cache.dir
+/home/heydhy12/taylor_qt/gui/build/CMakeFiles/taylor_gui_autogen_timestamp_deps.dir
+/home/heydhy12/taylor_qt/gui/build/CMakeFiles/taylor_gui_autogen.dir

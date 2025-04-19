@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>MainWindow</class>
+  <widget class="QMainWindow" name="MainWindow">
+    <property name="geometry">
+      <rect>
+        <x>0</x><y>0</y><width>400</width><height>300</height>
+      </rect>
+    </property>
+    <widget class="QWidget" name="centralWidget">
+      <layout class="QVBoxLayout" name="verticalLayout">
+
+        <!-- Tambahan functionComboBox -->
+        <item>
+          <widget class="QComboBox" name="functionComboBox">
+            <item>
+              <property name="text">
+                <string>sin</string>
+              </property>
+            </item>
+            <item>
+              <property name="text">
+                <string>cos</string>
+              </property>
+            </item>
+            <item>
+              <property name="text">
+                <string>tan</string>
+              </property>
+            </item>
+          </widget>
+        </item>
+
+        <item>
+          <widget class="QComboBox" name="angleComboBox">
+            <item>
+              <property name="text"><string>deg</string></property>
+            </item>
+            <item>
+              <property name="text"><string>rad</string></property>
+            </item>
+          </widget>
+        </item>
+        <item>
+          <widget class="QDoubleSpinBox" name="xInput">
+            <property name="minimum">
+              <double>-9999.0</double>
+            </property>
+            <property name="maximum">
+              <double>9999.0</double>
+            </property>
+            <property name="decimals">
+              <number>4</number>
+            </property>
+            <property name="value">
+              <double>0.0</double>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="QPushButton" name="calculateButton">
+            <property name="text">
+              <string>Hitung</string>
+            </property>
+          </widget>
+        </item>
+        <item>
+          <widget class="QPlainTextEdit" name="resultText">
+            <property name="readOnly">
+              <bool>true</bool>
+            </property>
+          </widget>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <resources/>
+  <connections/>
+</ui>

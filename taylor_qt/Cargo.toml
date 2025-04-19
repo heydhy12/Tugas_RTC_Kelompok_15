@@ -1,0 +1,12 @@
+[package]
+name = "taylor_qt"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "taylor_lookup"
+crate-type = ["cdylib"]  # Untuk kompilasi sebagai shared library
+
+[dependencies]
+libc = "0.2"
+lazy_static = "1.4.0"
