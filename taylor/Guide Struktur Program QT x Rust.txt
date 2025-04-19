@@ -1,0 +1,35 @@
+1. Struktur Proyek
+    Rust
+        src
+            lib.rs
+            main.rs
+        Target
+            Release
+    Qt
+        Build
+        Lib
+            Copy File Target (Rust) Berformat .so 
+        CMakeLists.txt
+        main.cpp
+        mainwindow.cpp
+        mainwindow.h
+        mainwindow.ui
+
+2. Build Rust Library
+    cd rust (Lokasi Folder Rust)
+    cargo build --release
+
+3. Build QT App
+    cd qt (Lokasi Folder QT)
+    mkdir build
+    cd build
+    cmake ..
+    make
+
+4. Jalankan Keseluruhan Program
+    cd taylor (Lokasi Folder Besar)
+    cd qt/build (Lokasi Build dan QT)
+    ls = Tandai Nama yang Hijau
+    LD_LIBRARY_PATH="/home/alandarmawan34/taylor/rust/target/release" ./NamalsYangHijau
+    
+    

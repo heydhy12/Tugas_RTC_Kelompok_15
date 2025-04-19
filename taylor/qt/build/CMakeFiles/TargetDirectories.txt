@@ -1,0 +1,5 @@
+/home/alandarmawan34/taylor/qt/build/CMakeFiles/TaylorQtApp.dir
+/home/alandarmawan34/taylor/qt/build/CMakeFiles/edit_cache.dir
+/home/alandarmawan34/taylor/qt/build/CMakeFiles/rebuild_cache.dir
+/home/alandarmawan34/taylor/qt/build/CMakeFiles/TaylorQtApp_autogen_timestamp_deps.dir
+/home/alandarmawan34/taylor/qt/build/CMakeFiles/TaylorQtApp_autogen.dir
