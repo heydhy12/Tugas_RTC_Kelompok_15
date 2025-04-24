@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Industry Maintenance Predictor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Training</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="browseCsvButton">
+         <property name="text">
+          <string>Browse CSV</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="csvPathLabel">
+         <property name="text">
+          <string>No file selected</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Epochs:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="epochSpinBox">
+         <property name="minimum">
+          <number>100</number>
+         </property>
+         <property name="maximum">
+          <number>10000</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="trainButton">
+         <property name="text">
+          <string>Train Model</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+    <widget class="QLabel" name="plotLabel">
+    <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="frameShape">
+        <enum>QFrame::Box</enum>
+    </property>
+    <property name="alignment">
+        <set>Qt::AlignCenter</set>
+    </property>
+    <property name="scaledContents">
+        <bool>false</bool> <!-- Diubah menjadi false -->
+    </property>
+    </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>Prediction</string>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Air Temperature (K):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDoubleSpinBox" name="airTempInput">
+         <property name="decimals">
+          <number>2</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Process Temperature (K):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QDoubleSpinBox" name="processTempInput">
+         <property name="decimals">
+          <number>2</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Rotational Speed (rpm):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QDoubleSpinBox" name="rotationalSpeedInput">
+         <property name="decimals">
+          <number>2</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Torque (Nm):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QDoubleSpinBox" name="torqueInput">
+         <property name="decimals">
+          <number>2</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="predictButton">
+           <property name="text">
+            <string>Predict</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="resultLabel">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Result will appear here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="probabilitiesLabel">
+      <property name="text">
+       <string>Probabilities will appear here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
