@@ -1,0 +1,5 @@
+/home/heydhy12/Qt_SVM_KNN/qt/build/CMakeFiles/QtSVMKNN.dir
+/home/heydhy12/Qt_SVM_KNN/qt/build/CMakeFiles/edit_cache.dir
+/home/heydhy12/Qt_SVM_KNN/qt/build/CMakeFiles/rebuild_cache.dir
+/home/heydhy12/Qt_SVM_KNN/qt/build/CMakeFiles/QtSVMKNN_autogen_timestamp_deps.dir
+/home/heydhy12/Qt_SVM_KNN/qt/build/CMakeFiles/QtSVMKNN_autogen.dir
