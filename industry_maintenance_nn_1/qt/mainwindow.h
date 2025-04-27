@@ -30,7 +30,7 @@ private:
 };
 
 extern "C" {
-    bool train_industry_model(const char* csv_path, int epochs, const char* plot_path, const char* model_path);
+    bool train_industry_model(const char* csv_path, int epochs, const char* plot_path, const char* model_path, double* accuracy);
     struct PredictionResult {
         int class_;  
         double* probabilities;  

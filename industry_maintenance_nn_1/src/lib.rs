@@ -8,7 +8,6 @@ use rand::seq::SliceRandom;
 use rand::thread_rng;
 use serde::{Serialize, Deserialize};
 use plotters::prelude::*;
-use std::path::Path;
 use libc;
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -37,6 +36,7 @@ pub struct TrainedModel {
     pub network: NeuralNetwork,
     pub mean: Array1<f64>,
     pub std: Array1<f64>,
+    pub final_accuracy: f64,    
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -61,6 +61,7 @@ pub extern "C" fn train_industry_model(
     epochs: i32,
     plot_path: *const libc::c_char,
     model_path: *const libc::c_char,
+    accuracy: *mut f64,
 ) -> bool {
     unsafe {
         let csv_path_str = std::ffi::CStr::from_ptr(csv_path).to_str().unwrap();
@@ -69,6 +70,7 @@ pub extern "C" fn train_industry_model(
 
         match train_network(csv_path_str, epochs as usize, plot_path_str) {
             Ok(model) => {
+                *accuracy = model.final_accuracy;
                 if let Ok(model_data) = bincode::serialize(&model) {
                     std::fs::write(model_path_str, model_data).is_ok()
                 } else {
@@ -116,7 +118,7 @@ pub extern "C" fn predict_failure_type(
 pub extern "C" fn free_prediction_result(result: *mut PredictionResult) {
     if !result.is_null() {
         unsafe {
-            Box::from_raw(result);
+            drop(Box::from_raw(result));
         }
     }
 }
@@ -165,7 +167,7 @@ fn train_network(csv_path: &str, epochs: usize, plot_path: &str) -> Result<Train
     let x_val = x_normalized.slice(s![split_idx.., ..]).to_owned();
     let y_val = y.slice(s![split_idx.., ..]).to_owned();
 
-    // Initialize neural network
+    // Paramater Initialize neural network
     let input_size = 4;
     let hidden_size1 = 5;
     let hidden_size2 = 3;
@@ -218,6 +220,10 @@ fn train_network(csv_path: &str, epochs: usize, plot_path: &str) -> Result<Train
         }
     }
 
+    // Calculate final accuracy
+    let final_output = nn.forward(&x_val);
+    let final_accuracy = calculate_accuracy(&y_val, &final_output);
+
     // Create plot
     create_plot(&history, plot_path)?;
 
@@ -225,6 +231,7 @@ fn train_network(csv_path: &str, epochs: usize, plot_path: &str) -> Result<Train
         network: nn,
         mean,
         std,
+        final_accuracy,
     })
 }
 
@@ -253,7 +260,8 @@ fn predict(
         .unwrap()
         .0;
     
-    let class_name = match class_index {
+    // Determine the predicted class index
+    let _ = match class_index {
         0 => "Power Failure",
         1 => "Overstrain Failure",
         2 => "No Failure",

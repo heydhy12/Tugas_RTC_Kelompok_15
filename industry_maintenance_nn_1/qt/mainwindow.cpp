@@ -40,31 +40,54 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_trainButton_clicked()
+void MainWindow::on_browseCsvButton_clicked()
 {
-    QString csvFilePath = QFileDialog::getOpenFileName(this, 
-        tr("Select Air Quality CSV File"), "", tr("CSV Files (*.csv)"));
-    
+    QString file = QFileDialog::getOpenFileName(this, 
+        "Select CSV File", 
+        QCoreApplication::applicationDirPath(), 
+        "CSV Files (*.csv)");
+        
+    if (!file.isEmpty()) {
+        csvFilePath = file;
+        ui->csvPathLabel->setText(QFileInfo(file).fileName());
+        
+        // Debug output
+        qDebug() << "Selected CSV file:" << csvFilePath;
+    }
+}
+
+
+void MainWindow::on_trainButton_clicked()
+{   
     if (csvFilePath.isEmpty()) {
+        QMessageBox::warning(this, "Warning", "Please select a CSV file first");
         return;
     }
-    
 
     int epochs = ui->epochSpinBox->value();
-    QString plotPath = "training_plot.png";  // Gunakan path relatif
-    QString modelPath = "trained_model.bin"; // Gunakan path relatif
+    QString plotPath = "training_plot.png";  
+    QString modelPath = "trained_model.bin"; 
 
-    // Panggil fungsi Rust
+    // Add accuracy variable
+    double accuracy = 0.0;
+
+    // Panggil fungsi Rust (modified to return accuracy)
     bool success = train_industry_model(
         csvFilePath.toStdString().c_str(),
         epochs,
         plotPath.toStdString().c_str(),
-        modelPath.toStdString().c_str()
+        modelPath.toStdString().c_str(),
+        &accuracy  // Pass pointer to accuracy variable
     );
 
     if (success) {
-        QMessageBox::information(this, "Success", "Model trained successfully!");
-        displayTrainingPlot();  // Tanpa parameter
+        QString message = QString("Model trained successfully!\nAccuracy: %1%")
+                            .arg(accuracy * 100, 0, 'f', 2);
+        QMessageBox::information(this, "Success", message);
+        
+        ui->accuracyLabel->setText(QString("Training Accuracy: %1%").arg(accuracy * 100, 0, 'f', 2));
+        
+        displayTrainingPlot();
     } else {
         QMessageBox::critical(this, "Error", "Failed to train model");
     }
@@ -119,8 +142,6 @@ void MainWindow::on_predictButton_clicked()
         return;
     }
 
-
-    
     // Format probabilities
     QString probabilities = QString(
         "Power Failure: %1%\n"
@@ -135,22 +156,6 @@ void MainWindow::on_predictButton_clicked()
     ui->probabilitiesLabel->setText(probabilities);
     
     free_prediction_result(result);
-}
-
-void MainWindow::on_browseCsvButton_clicked()
-{
-    QString file = QFileDialog::getOpenFileName(this, 
-        "Select CSV File", 
-        QCoreApplication::applicationDirPath(), 
-        "CSV Files (*.csv)");
-        
-    if (!file.isEmpty()) {
-        csvFilePath = file;
-        ui->csvPathLabel->setText(QFileInfo(file).fileName());
-        
-        // Debug output
-        qDebug() << "Selected CSV file:" << csvFilePath;
-    }
 }
 
 void MainWindow::displayTrainingPlot()
