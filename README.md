@@ -3,12 +3,12 @@
 GitHub repositori ini berisi seluruh hasil pengerjaan mata kuliah **Rekayasa Teknologi Cerdas** oleh Kelompok 15 yang berfokus terhadap **implementasi algoritma menggunakan Bahasa Rust dan pengembangan GUI menggunakan QT**
 Dataset dari website : _**https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-dataset-ai4i-2020/discussion/491365**_
 
-🍒Daftar anggota kelompok:
+**🍒Daftar anggota kelompok:**
 1. Monica Intan Wijayanti (2042221014)
 2. Alan Darmawan Dewantoro (2042221020)
 3. Heydhy Maulana Syahputra (2042221095)
 
-🍒 Terdapat 5 project, dengan Deskripsi project  dan logika step running nya sebagai berikut:
+**🍒 Terdapat 5 project, dengan Deskripsi project  dan logika step running nya sebagai berikut:**
 1. **Implementasi fungsi sinx dan cosx menggunakan pendekatan Deret Taylor**
     - Program dibuat dengan mengolah rumus pendekatan deret taylor
     - User melakukan input fungsi nilai sudut
@@ -47,15 +47,14 @@ Dataset dari website : _**https://www.kaggle.com/datasets/stephanmatzka/predicti
     - program menerima hasil prediksi dari model
     - Tampilan hasil prediksi ke GUI berupa anga, plot tabel, dan grafik
 
-🍒 Hasil:
-Dari percobaan yang telah dilakukan oleh penulis dengan data set berjumlah 1383, dimana 80% data sebagai training dan 20% data sebagai testing, telah berhasil dilakukan pembuatan program deret taylor, look-up table, SVM dan kNN, serta Neural Network  menggunakan software Rust. Disini, dapat dinilai bahwa proses pembacaan program menggunakan Rust lebih cepat dibandingkan dengan phyton. Rust memakan waktu sekitar  12 detik, sedangkan phyton memakan waktu sekitar 13 menit. Nilai akurasi yang di 
-dapatkan dalam program ini adalah 96% untuk training dan 95% untuk testing dengan 4 input (air temperature, process temperature, rational speed, dan torque) dan 4 output (power failure, overstrain failure, no failure, heat dissipation failure).
+**🍒 Hasil:**
+Dari percobaan yang telah dilakukan oleh penulis dengan data set berjumlah 1383, dimana 80% data sebagai training dan 20% data sebagai testing, telah berhasil dilakukan pembuatan program deret taylor, look-up table, SVM dan kNN, serta Neural Network  menggunakan software Rust. Disini, dapat dinilai bahwa proses pembacaan program menggunakan Rust lebih cepat dibandingkan dengan phyton. Rust memakan waktu sekitar  12 detik, sedangkan phyton memakan waktu sekitar 13 menit. Nilai akurasi yang di dapatkan dalam program ini adalah 96% untuk training dan 95% untuk testing dengan 4 input (air temperature, process temperature, rational speed, dan torque) dan 4 output (power failure, overstrain failure, no failure, heat dissipation failure). Tugas ini menggunakan 40 jurnal internasional, dengan 10 jurnal sebagai sitasi laporan dan 30 jurnal sebagai referensi.
 
 **Link laporan:**
-https://its.id/m/LAPORANKELOMPOK15RTC
+https://its.id/m/RTC_LAPORANKELOMPOK15
 
 **Link PPT:**
-https://its.id/m/PPTKELOMPOK15RTC
+https://its.id/m/RTC_PPTKELOMPOK15
 
 **Link Referensi 30 Jurnal Internasional:**
 https://its.id/m/30JurnalReferensiIEEE 
