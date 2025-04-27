@@ -54,7 +54,7 @@ Dari percobaan yang telah dilakukan oleh penulis dengan data set berjumlah 1383,
 https://its.id/m/RTC_LAPORANKELOMPOK15
 
 **Link PPT:**
-https://its.id/m/RTC_PPTKELOMPOK15
+https://its.id/m/POWERPOINT_KELOMPOK15RTC
 
 **Link Referensi 30 Jurnal Internasional:**
 https://its.id/m/30JurnalReferensiIEEE 
