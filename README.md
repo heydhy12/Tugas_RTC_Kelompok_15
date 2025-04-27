@@ -59,11 +59,9 @@ https://its.id/m/POWERPOINTKELOMPOK15
 **Link Referensi 30 Jurnal Internasional:**
 https://its.id/m/30JurnalReferensiIEEE 
 
+--
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-Tentu! Ini terjemahan persis seperti permintaanmu, dengan **bold**, _italic_, tanda baca, dan format yang sama:
+IN ENGLISH LEANGUAGE
 
 ---
 
@@ -127,7 +125,3 @@ https://its.id/m/POWERPOINTKELOMPOK15
 
 **Link to 30 International Journal References:**
 https://its.id/m/30JurnalReferensiIEEE
-
----
-
-Mau sekalian aku buatkan juga versi Markdown (misal mau langsung dipaste ke GitHub)? 🚀
