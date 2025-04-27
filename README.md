@@ -59,7 +59,7 @@ https://its.id/m/POWERPOINTKELOMPOK15
 **Link Referensi 30 Jurnal Internasional:**
 https://its.id/m/30JurnalReferensiIEEE 
 
---
+---
 
 IN ENGLISH LEANGUAGE
 
