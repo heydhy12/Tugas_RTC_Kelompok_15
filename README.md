@@ -5,7 +5,7 @@ Anggota:
 - Alan Darmawan Dewantoro (2042221020)
 - Heydhy Maulana Syahputra (2042221095)
 
-SELURUH FOLDER HASIL PROGRAM DAN INSTRUKSI LENGKAP BISA DI AKSES DI **BRANCH MASTER**
+SELURUH FOLDER HASIL PROGRAM DAN INSTRUKSI LENGKAP BISA DI AKSES DI **BRANCH MASTER**, seperti gambar di bawah ini:
 
 ![image](https://github.com/user-attachments/assets/4ca60902-e543-4d32-a113-aad5acc07ce9)
 
