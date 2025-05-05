@@ -61,7 +61,7 @@ https://its.id/m/30JurnalReferensiIEEE
 
 ---
 
-IN ENGLISH LEANGUAGE
+IN ENGLISH LANGUAGE
 
 ---
 
