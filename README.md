@@ -46,15 +46,28 @@ Dataset dari website : _**https://www.kaggle.com/datasets/stephanmatzka/predicti
     - Forntend dan Backend Connection
     - program menerima hasil prediksi dari model
     - Tampilan hasil prediksi ke GUI berupa anga, plot tabel, dan grafik
+  
+**🍒 Dataset Yang Digunakan**
+Dataset yang diambil dari website Kaggle adalah data yang berisi monitoring kondisi mesin , khususnya milling machine. Data ini digunakan untuk memantai kondisi mesin milling agar dapat diperbaiki sebelum benar-benar rusak untuk tujuan engineer melakukan predictive maintenance. Dalam dataset tersebut, terdapat 6 parameter yang disebutkan. Namun, dalam penugasan ini penulis hanya memilih 4 parameter utama untuk diproses menggunakan Neural Network. Parameter tersebut adalah:
+1.	Air Temperature  (K) : temperature  udara di sekitar mesin.
+2.	Process Temperature  (K) : temperature  internal proses mesin ketika bekerja. Jika temperature  terlalu panas (overheat), dapat menyebabkan terjadinya kerusakan mesin atau aus.
+3.	Rotational Speed (RPM) : Kecepatan putar poros (spindle) mesin dalam rotasi per menit). Jika kecepatan terlalu tinggi atau terlalu rendah, dapat menyebabkan pemotongan yang tidak optimal.
+4.	Torque (Nm) : Besarnya torsi atau gaya puntir yang terjadi saat mesin bekerja. Torsi tinggi bisa artinya mesin sedang memotong bahan yang keras atau sedang mengalami beban berat.
+
+Ke-4 parameter tersebut digunakan sebagai input yang akan di proses dengan hidden layer 5 dan 3. Kemudian, output yang didapatkan ada 4 pula, yaitu:
+1.	No Failure : tidak ada masalah.
+2.	Power Failure : kerusakan karena masalah daya listrik.
+3.	Heat Degradation Failure : kerusakan karena suhu tinggi.
+4.	Overstrain Failure : kerusakan karena tekanan berlebihan.
 
 **🍒 Hasil:**
 Dari percobaan yang telah dilakukan oleh penulis dengan data set berjumlah 1383, dimana 80% data sebagai training dan 20% data sebagai testing, telah berhasil dilakukan pembuatan program deret taylor, look-up table, SVM dan kNN, serta Neural Network  menggunakan software Rust. Disini, dapat dinilai bahwa proses pembacaan program menggunakan Rust lebih cepat dibandingkan dengan phyton. Rust memakan waktu sekitar  12 detik, sedangkan phyton memakan waktu sekitar 13 menit. Nilai akurasi yang di dapatkan dalam program ini adalah 96% untuk training dan 95% untuk testing dengan 4 input (air temperature, process temperature, rational speed, dan torque) dan 4 output (power failure, overstrain failure, no failure, heat dissipation failure). Tugas ini menggunakan 40 jurnal internasional, dengan 10 jurnal sebagai sitasi laporan dan 30 jurnal sebagai referensi.
 
 **Link laporan:**
-https://its.id/m/LAPORANRTCKELOMPOK15
+https://its.id/m/KELOMPOK15RTCLAPORAN
 
 **Link PPT:**
-https://its.id/m/POWERPOINTKELOMPOK15
+https://its.id/m/PPTRTCKELOMPOK15
 
 **Link Referensi 30 Jurnal Internasional:**
 https://its.id/m/30JurnalReferensiIEEE 
@@ -114,14 +127,27 @@ Dataset from website: _**https://www.kaggle.com/datasets/stephanmatzka/predictiv
     - The program receives prediction results from the model
     - Displaying prediction results on the GUI in the form of numbers, plot tables, and graphs
 
+**🍒 Dataset Used**
+The dataset taken from the Kaggle website contains data that monitors the condition of a machine, specifically a milling machine. This data is used to monitor the condition of the milling machine so that it can be repaired before actual failure occurs, supporting engineers in implementing predictive maintenance. In this dataset, six parameters are mentioned. However, in this assignment, the author only selected four main parameters to be processed using a Neural Network. These parameters are:
+1. Air Temperature (K): The temperature of the air surrounding the machine.
+2. Process Temperature (K): The internal temperature of the machine during operation. If the temperature becomes too high (overheats), it may cause machine damage or wear.
+3. Rotational Speed (RPM): The rotational speed of the machine's spindle in revolutions per minute. If the speed is too high or too low, it can lead to suboptimal cutting performance.
+4. Torque (Nm): The amount of torque or twisting force generated during machine operation. A high torque value may indicate the machine is cutting a hard material or under heavy load.
+
+These four parameters are used as input and processed through two hidden layers with 5 and 3 neurons, respectively. The resulting outputs are four types of machine conditions:
+1. No Failure: No issues detected.
+2. Power Failure: Failure caused by electrical power problems.
+3. Heat Degradation Failure: Failure caused by high temperature.
+4. Overstrain Failure: Failure caused by excessive mechanical stress.
+   
 **🍒 Results:**
 From experiments conducted by the authors using a dataset of 1383 entries, where 80% of the data was used for training and 20% for testing, successful implementation of the Taylor series program, look-up table, SVM and kNN, as well as Neural Network using Rust software was achieved. Here, it can be assessed that the process of reading programs using Rust is faster compared to Python. Rust takes about 12 seconds, whereas Python takes about 13 minutes. The accuracy achieved in this program is 96% for training and 95% for testing with 4 inputs (air temperature, process temperature, rotational speed, and torque) and 4 outputs (power failure, overstrain failure, no failure, heat dissipation failure). This assignment uses 40 international journals, with 10 journals as citations for the report and 30 journals as references.
 
 **Link to report:**
-https://its.id/m/LAPORANRTCKELOMPOK15
+https://its.id/m/KELOMPOK15RTCLAPORAN
 
 **Link to PPT:**
-https://its.id/m/POWERPOINTKELOMPOK15
+https://its.id/m/PPTRTCKELOMPOK15
 
 **Link to 30 International Journal References:**
 https://its.id/m/30JurnalReferensiIEEE
