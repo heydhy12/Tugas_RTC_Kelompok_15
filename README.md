@@ -47,7 +47,7 @@ Dataset dari website : _**https://www.kaggle.com/datasets/stephanmatzka/predicti
     - program menerima hasil prediksi dari model
     - Tampilan hasil prediksi ke GUI berupa anga, plot tabel, dan grafik
   
-**🍒 Dataset Yang Digunakan**
+**🍒 Dataset Yang Digunakan:**
 Dataset yang diambil dari website Kaggle adalah data yang berisi monitoring kondisi mesin , khususnya milling machine. Data ini digunakan untuk memantai kondisi mesin milling agar dapat diperbaiki sebelum benar-benar rusak untuk tujuan engineer melakukan predictive maintenance. Dalam dataset tersebut, terdapat 6 parameter yang disebutkan. Namun, dalam penugasan ini penulis hanya memilih 4 parameter utama untuk diproses menggunakan Neural Network. Parameter tersebut adalah:
 1.	Air Temperature  (K) : temperature  udara di sekitar mesin.
 2.	Process Temperature  (K) : temperature  internal proses mesin ketika bekerja. Jika temperature  terlalu panas (overheat), dapat menyebabkan terjadinya kerusakan mesin atau aus.
@@ -127,7 +127,7 @@ Dataset from website: _**https://www.kaggle.com/datasets/stephanmatzka/predictiv
     - The program receives prediction results from the model
     - Displaying prediction results on the GUI in the form of numbers, plot tables, and graphs
 
-**🍒 Dataset Used**
+**🍒 Dataset Used:**
 The dataset taken from the Kaggle website contains data that monitors the condition of a machine, specifically a milling machine. This data is used to monitor the condition of the milling machine so that it can be repaired before actual failure occurs, supporting engineers in implementing predictive maintenance. In this dataset, six parameters are mentioned. However, in this assignment, the author only selected four main parameters to be processed using a Neural Network. These parameters are:
 1. Air Temperature (K): The temperature of the air surrounding the machine.
 2. Process Temperature (K): The internal temperature of the machine during operation. If the temperature becomes too high (overheats), it may cause machine damage or wear.
