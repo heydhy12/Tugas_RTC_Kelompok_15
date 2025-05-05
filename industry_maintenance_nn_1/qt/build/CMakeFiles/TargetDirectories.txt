@@ -1,5 +1,0 @@
-/home/alandarmawan34/industry_maintenance_nn_1/qt/build/CMakeFiles/IndustryMaintenancePredictor.dir
-/home/alandarmawan34/industry_maintenance_nn_1/qt/build/CMakeFiles/edit_cache.dir
-/home/alandarmawan34/industry_maintenance_nn_1/qt/build/CMakeFiles/rebuild_cache.dir
-/home/alandarmawan34/industry_maintenance_nn_1/qt/build/CMakeFiles/IndustryMaintenancePredictor_autogen_timestamp_deps.dir
-/home/alandarmawan34/industry_maintenance_nn_1/qt/build/CMakeFiles/IndustryMaintenancePredictor_autogen.dir

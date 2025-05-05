@@ -15,7 +15,7 @@ use utils::manual_prediction;
 
 fn main() -> Result<(), Box<dyn Error>> {
     println!("Reading Files CSV...");
-    let file_path = "csv/industry_maintenance.csv";
+    let file_path = "file/industry_maintenance.csv";
     let (x, y) = load_data(file_path)?;
     println!("Successfully Read {} records.", x.shape()[0]);
 
