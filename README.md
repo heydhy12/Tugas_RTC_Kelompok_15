@@ -62,6 +62,22 @@ Ke-4 parameter tersebut digunakan sebagai input yang akan di proses dengan hidde
 3.	Heat Degradation Failure : kerusakan karena suhu tinggi.
 4.	Overstrain Failure : kerusakan karena tekanan berlebihan.
 
+**🍒 Step pembuatan project Neural Network:**
+Penjelasan Alur menghubungkan Back End (Rust) ke Front End (QT):
+Pertama-tama, penulis menyiapkan data maintenance dari Kaggle yang telah dilakukan editing karena ada beberapa data yang dapat dapat diproses secara langsung. Data ini kemudian dimasukkan dan di proses ke dalam back end (Rust) dan kemudian akan ditampilkan dengan front end (QT). adapun folder yang terdapat dalam pembuatan tugas ini, yaitu:
+1. File : Berisi data CSV beserta hasil training
+2. SRC : Berisi 6 file (fungsi masing-masing file akan dijelaskan dibawah)
+3. QT : Berisi file QT format phyton
+
+Seperti yang telah disebutkan di atas, berikut ini adalah fungsi utama masing-masing yang terdapat dalam folder SRC, yaitu:
+-	Data.rs : File yang berisi tentang pemrosesan data, dan normalized data agar dapat digunakan sebagai training dan testing
+-	Model.rs : File yang berisi tentang pemodelan neural network.
+-	Plot.rs : File yang berisi codingan contuk melakukan plotting data seperti grafik dan gambar.
+-	Utils.rs : File yang berisi codingan untuk input manual terminal sesuai dengan 4 parameter.
+-	Main.rs : File ini memuat program secara keseluruhan dari 4 folder yang telah disebutkan di atas. Jadi, dalam folder ini program dari awal pembuatan back end hingga training data dijadikan 1.
+-	Lib.rs : File ini adalah versi folder main.rs yang akan digunakan sebagai “jembatan” untuk dipanggil oleh QT dalam programnya. Folder ini nantinya akan menghasilkan folder baru Bernama “lib.so”, yang akan digunakan untuk pemrosesan data lebih lanjut di QT.
+Kemudian, folder QT akan memanggil dan memberikan Call Back kepada Rust menggunakan folder lib.so. QT yang digunakan adalah QT dengan Bahasa phyton.
+
 **🍒 Hasil:**
 Dari percobaan yang telah dilakukan oleh penulis dengan data set berjumlah 1383, dimana 80% data sebagai training dan 20% data sebagai testing, telah berhasil dilakukan pembuatan program deret taylor, look-up table, SVM dan kNN, serta Neural Network  menggunakan software Rust. Disini, dapat dinilai bahwa proses pembacaan program menggunakan Rust lebih cepat dibandingkan dengan phyton. Rust memakan waktu sekitar  12 detik, sedangkan phyton memakan waktu sekitar 13 menit. Nilai akurasi yang di dapatkan dalam program ini adalah 96% untuk training dan 95% untuk testing dengan 4 input (air temperature, process temperature, rational speed, dan torque) dan 4 output (power failure, overstrain failure, no failure, heat dissipation failure). Tugas ini menggunakan 40 jurnal internasional, dengan 10 jurnal sebagai sitasi laporan dan 30 jurnal sebagai referensi.
 
@@ -143,7 +159,22 @@ These four parameters are used as input and processed through two hidden layers 
 2. Power Failure: Failure caused by electrical power problems.
 3. Heat Degradation Failure: Failure caused by high temperature.
 4. Overstrain Failure: Failure caused by excessive mechanical stress.
-   
+
+**🍒 Steps to create a Neural Networ project:**
+Explanation of the Flow connecting the Back End (Rust) to the Front End (QT):
+First of all, the author prepares maintenance data from Kaggle that has been edited because there is some data that can be processed directly. This data is then entered and processed into the back end (Rust) and will then be displayed with the front end (QT). The folders contained in the creation of this task are:
+1. File : Contains CSV data and training results
+2. SRC: Contains 6 files (the functions of each file will be explained below)
+3. QT: Contains QT files in python format
+
+As mentioned above, the following are the main functions of each of them contained in the SRC folder, namely:
+- Data.rs : Files containing data processing, and normalized data so that it can be used for training and testing
+- Model.rs : Files that contain about neural network modeling.
+- Plot.rs: Files containing coding to plot data such as graphs and images.
+- Utils.rs : A file containing the encoding for the manual input of the terminal according to 4 parameters.
+- Main.rs : This file contains the entire program from the 4 folders mentioned above. So, in this folder, the program from the beginning of creating the back end to training data is made 1.
+- Lib.rs: This file is the version of the main.rs folder that will be used as a "bridge" to be called by QT in its program. This folder will later generate a new folder named "lib.so", which will be used for further data processing in QT. Then, the QT folder will call and give a Call Back to Rust using lib.so folder. The QT used is QT with python language.
+  
 **🍒 Results:**
 From experiments conducted by the authors using a dataset of 1383 entries, where 80% of the data was used for training and 20% for testing, successful implementation of the Taylor series program, look-up table, SVM and kNN, as well as Neural Network using Rust software was achieved. Here, it can be assessed that the process of reading programs using Rust is faster compared to Python. Rust takes about 12 seconds, whereas Python takes about 13 minutes. The accuracy achieved in this program is 96% for training and 95% for testing with 4 inputs (air temperature, process temperature, rotational speed, and torque) and 4 outputs (power failure, overstrain failure, no failure, heat dissipation failure). This assignment uses 40 international journals, with 10 journals as citations for the report and 30 journals as references.
 
