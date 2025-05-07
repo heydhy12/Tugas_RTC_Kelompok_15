@@ -14,7 +14,7 @@ Institut Teknologi Sepuluh Nopember
 **🍉 Dosen pengampu:**
 Ahmad Radhy, S.Si., M.Si
 
-SELURUH FOLDER HASIL PROGRAM DAN INSTRUKSI LENGKAP BISA DI AKSES DI **BRANCH MASTER**, 
+📌📌SELURUH FOLDER HASIL PROGRAM DAN INSTRUKSI LENGKAP BISA DI AKSES DI **BRANCH MASTER**📌📌, 
 
 **📌📌📌 Note: Untuk melihatnya, rubah dulu branch pada kotak merah seperti gambar di bawah ini:**
 
