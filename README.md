@@ -1,10 +1,10 @@
-TUGAS REKAYASA TEKNOLOGI CERDAS KELOMPOK 15
+**📚TUGAS REKAYASA TEKNOLOGI CERDAS KELOMPOK 15📚**
 
-Departemen Teknik Instrumentasi
+**Departemen Teknik Instrumentasi**
 
-Fakultas Vokasi
+**Fakultas Vokasi**
 
-Institut Teknologi Sepuluh Nopember
+**Institut Teknologi Sepuluh Nopember**
 
 **🍉 Anggota:**
 - Monica Intan Wijayanti (2042221014)
