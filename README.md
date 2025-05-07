@@ -1,12 +1,14 @@
 📚 **TUGAS RTC KELOMPOK 15**
 
-GitHub repositori ini berisi seluruh hasil pengerjaan mata kuliah **Rekayasa Teknologi Cerdas** oleh Kelompok 15 yang berfokus terhadap **implementasi algoritma menggunakan Bahasa Rust dan pengembangan GUI menggunakan QT**
+GitHub repositori ini berisi seluruh hasil pengerjaan mata kuliah **Rekayasa Teknologi Cerdas** oleh Kelompok 15 Departemen Teknik Instrumentasi, Institut Teknologi Sepuluh Nopember yang berfokus terhadap **implementasi algoritma menggunakan Bahasa Rust dan pengembangan GUI menggunakan QT**
 Dataset dari website : _**https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-dataset-ai4i-2020/discussion/491365**_
 
-**🍒Daftar anggota kelompok:**
+**🍒 Daftar anggota kelompok:**
 1. Monica Intan Wijayanti (2042221014)
 2. Alan Darmawan Dewantoro (2042221020)
 3. Heydhy Maulana Syahputra (2042221095)
+
+**🍒 Dosen pengampu: Ahmad Radhy, S.Si., M.Si**
 
 **🍒 Terdapat 5 project, dengan Deskripsi project  dan logika step running nya sebagai berikut:**
 1. **Implementasi fungsi sinx dan cosx menggunakan pendekatan Deret Taylor**
@@ -80,13 +82,15 @@ IN ENGLISH LANGUAGE
 
 📚 **RTC GROUP 15 ASSIGNMENT**
 
-This GitHub repository contains all the work results for the course **Intelligent Technology Engineering** by Group 15, focusing on the **implementation of algorithms using Rust language and GUI development using QT**.  
+This GitHub repository contains all the work results for the course **Intelligent Technology Engineering** by Group 15 Department of Instrumentation Engineering, Sepuluh Nopember Institute of Technology, focusing on the **implementation of algorithms using Rust language and GUI development using QT**.  
 Dataset from website: _**https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-dataset-ai4i-2020/discussion/491365**_
 
-**🍒List of group members:**
+**🍒 List of group members:**
 1. Monica Intan Wijayanti (2042221014)
 2. Alan Darmawan Dewantoro (2042221020)
 3. Heydhy Maulana Syahputra (2042221095)
+
+**🍒 Supervisor: Ahmad Radhy, S.Si., M.Si**
 
 **🍒 There are 5 projects, with the project descriptions and running logic steps as follows:**
 1. **Implementation of sinx and cosx functions using Taylor Series approach**
